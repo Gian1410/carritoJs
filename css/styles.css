@@ -140,31 +140,42 @@ img{
 
 /* cursos */
 .section-cursos{
+    
     background-color: antiquewhite;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
 }
 .section-cursos h1{
     text-align: center;
 }
 .content-cursos{
-    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 90px;
+    gap: 2pc;
+    align-items: center;
+    /* display: flex;
+    columns: 3;
     justify-content: space-around;
-    margin-bottom: 50px;
-}
-
-.card-curso{
-    width: 250px;
-    background-color: white;
-}
-
-.info-card{
-    margin: 15px;
+    margin-bottom: 50px; */
 }
 
 .info-card img{
-    width: 90px;
+    width: 100px;
 }
+
+.card-curso{
+    background-color: white;
+    width: 300px;
+    border-color: black;
+    border: 10px;
+    margin: 10px;
+}
+
+.info-card{
+    margin: 10px;
+}
+
 
 .price-card{
     display: flex;
@@ -172,12 +183,14 @@ img{
 }
 
 .button-buy{
+    margin-top: 20px;
     height: 30px;
-    width: 220px;
+    width: 280px;
     background-color: #33C3F0;
     color: white;
     border-radius: 5px;
     border-color: transparent;
+
 }
 
 .button-buy:hover{
