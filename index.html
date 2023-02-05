@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Gian Piero">
+    <meta name="description" content="Practica Javascript carrito">
+    <meta name="keywords" content="HTML. CSS . JAVASCRIPT, CARRITO">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo -->
+    <title>Store Bootcamp</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="">
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <!-- pendiente -->
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu icon">
+                    <i class="bi bi-shop"></i>
+                    <h2>BOOTCAMP</h2>
+                </li>
+
+                <li class="menu submenu">
+                    <i class="bi bi-cart" id="img-carrito"></i>
+                    <div id="carrito">
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    
+
+                        <button href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero">
+
+
+            <div class="hero-content">
+                
+                <div class="hero-paragraph">
+                    <h2>Aprende algo nuevo</h2>
+                    <p>Todos los cursos a $15</p>
+                </div>
+
+                <div class="hero-search">
+                    <form action="" role="search">
+                        
+                        <input type="search" placeholder="¿Que te gustaría Aprender?" >
+                    </form>
+                </div>
+
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="hero-info">
+            <div class="list-info">
+                <div class="info-1 card">
+                    <i class="bi bi-easel2"></i>
+                    <p>20.000 Cursos en linea</p>
+                    <p>Explora los temas más recientes</p>
+                </div>
+                <div class="info-2 card">
+                    <i class="bi bi-emoji-sunglasses"></i>
+                    <p>Instructores Expertos</p>
+                    <p>Aprende con distintos estilos</p>
+                </div>
+                <div class="info-3 card">
+                    <i class="bi bi-alarm"></i>
+                    <p>Aprende de por vida</p>
+                    <p>Aprende a tu ritmo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-cursos">
+        <h1>Cursos En Línea</h1>
+        <div class="content-cursos">
+            <div class="card-curso">
+                <img src="img/curso1.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>HTML5, CSS3, JAVASCRIPT para Principiantes</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card-curso">
+                <img src="img/curso2.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Curso de Comida Vegetariana (Actualizado 2023)</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-curso">
+                <img src="img/curso3.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Curso de Guitarra desde 0 (Actualizado 2023)</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-cursos">
+            <div class="card-curso">
+                <img src="img/curso4.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Huerto para tu Casa (Tips - Instrucciones)</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card-curso">
+                <img src="img/curso5.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Decoración con productos de tu hogar</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-curso">
+                <img src="img/curso6.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Diseño Web para Principiantes</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-cursos">
+            <div class="card-curso">
+                <img src="img/curso2.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Comida Mexicana para Principiantes</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card-curso">
+                <img src="img/curso3.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Estudio Musical para Principiantes</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-curso">
+                <img src="img/curso4.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Cosecha tus propias frutas y verduras</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-cursos">
+            <div class="card-curso">
+                <img src="img/cookies.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>Prepara Galletas Caseras</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card-curso">
+                <img src="img/curso6.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>JavaScript Moderno con ES6</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-curso">
+                <img src="img/curso2.jpg" alt="html-curso">
+
+                <div class="info-card">
+                    <h3>100 Recetas de Comida Natural</h3>
+                    <p>Juan Pedro</p>
+                    <img src="img/estrellas.png" alt="stars">
+
+                    <div class="price-card">
+                        <p>$200</p>
+                        <p>$15</p>
+                    </div>
+
+                    <button class="button-buy">
+                        <p>AGREGAR AL CARRITO</p>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="column-footer">
+                    <a href="">Para tu Negocio</a>
+                    <a href="">Conviertete en Instructor</a>
+                    <a href="">Aplicaciones Moviles</a>
+                    <a href="">Soporte</a>
+                    <a href="">Temas</a>
+                </div>
+                <div class="column-footer">
+                    <a href="">¿Quienes Somos?</a>
+                    <a href="">Empleo</a>
+                    <a href="">Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
