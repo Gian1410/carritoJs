@@ -182,7 +182,7 @@ img{
     justify-content: space-between;
 }
 
-.button-buy{
+.button{
     margin-top: 20px;
     height: 30px;
     width: 280px;
@@ -193,7 +193,7 @@ img{
 
 }
 
-.button-buy:hover{
+.button:hover{
     cursor: pointer;
     background-color: #1EAEDB;
 }
