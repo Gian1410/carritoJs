@@ -138,6 +138,18 @@ img{
     font-size: 30px;
 }
 
+.borrar-curso{
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.borrar-curso:hover{
+    cursor: pointer;
+    color: black;
+}
+
 /* cursos */
 .section-cursos{
     
@@ -216,4 +228,29 @@ img{
 .column-footer a{
     color: #1EAEDB;
     line-height: 30px;
+}
+
+@media (max-width: 1024px ){
+    
+}
+
+@media (max-width: 507px ){
+    .hero-section{
+        background: url(/img/img-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        width: 600px;;
+    
+    }
+    .hero-content{
+        margin-left: 100px;
+    }
+
+    .card{
+        margin: 0;
+    }
+    .list-info{
+        display: inline;
+    }
 }
