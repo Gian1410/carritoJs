@@ -230,6 +230,10 @@ img{
     line-height: 30px;
 }
 
+tbody{
+    text-align: center;
+}
+
 @media (max-width: 1024px ){
     
 }
